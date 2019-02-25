@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * This file is part of GulshanDev_CronManager Module
+ * 
+ * @author Gulshan Kumar <gulshan.4dream@gmail.com>
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="GulshanDev\CronManager\Model\ResourceModel\Jobs\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">cron_schedule_jobs</argument>
+            <argument name="resourceModel" xsi:type="string">GulshanDev\CronManager\Model\ResourceModel\Job\Collection</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="cronjob_listing_data_source" xsi:type="string">GulshanDev\CronManager\Model\ResourceModel\Jobs\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Cron\Model\Schedule">
+        <plugin name="try_schedule_around" type="GulshanDev\CronManager\Plugin\Cron\Schedule" sortOrder="50" />
+    </type>
+</config>

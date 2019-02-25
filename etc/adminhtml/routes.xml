@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of GulshanDev_CronManager Module
+ * 
+ * @author Gulshan Kumar <gulshan.4dream@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="cronmanager" frontName="cronmanager">
+            <module name="GulshanDev_CronManager"/>
+        </route>
+    </router>
+</config>

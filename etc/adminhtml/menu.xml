@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of GulshanDev_CronManager Module
+ * 
+ * @author Gulshan Kumar <gulshan.4dream@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="GulshanDev_CronManager::cron_manager" title="Enable/Disable Cron Job" translate="title" module="GulshanDev_CronManager" sortOrder="50" parent="Magento_Backend::system_tools" action="cronmanager/job/list" resource="GulshanDev_CronManager::manage"/>
+    </menu>
+</config>

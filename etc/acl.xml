@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of GulshanDev_CronManager Module
+ * 
+ * @author Gulshan Kumar <gulshan.4dream@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::system">
+                    <resource id="Magento_Backend::tools">
+                        <resource id="GulshanDev_CronManager::manage" title="Manage Cron Jobs" translate="title" sortOrder="50" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
