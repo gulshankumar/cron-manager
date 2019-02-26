@@ -1,5 +1,5 @@
 # Magento 2 - Enable/Disable cron job
-Magento has a number of cron jobs that always executes and we don't really need they. And they add a little load on the server.
+Magento has a number of cron jobs that always executes and we don't really need them. And they add a little load on the server.
 Sometime we feel some cron job is creating overhead to the server and we need them to be disabled but we have no control over them.
 With this extension you can easily enable/disable them from Magento admin.
 - Easily enable/disable Magento cron jobs
