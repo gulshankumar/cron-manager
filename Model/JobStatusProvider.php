@@ -44,7 +44,6 @@ class JobStatusProvider
      */
     protected function getJobStatuses() {
         if (!$this->isLoaded) {
-            echo 'called------'.date();
             /*@var \GulshanDev\CronManager\Model\ResourceModel\Job\Collection $jobCollection */
             $jobCollection = $this->jobCollectionFactory->create();
 
